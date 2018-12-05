@@ -1,17 +1,4 @@
-# -*- coding: utf-8 -*-
 
-"""
-
-Copyright: Infosys Ltd (2017)
-
-Original code for the levenshtein algorithm : Gunther Cox 
-@ https://github.com/gunthercox/ChatterBot/blob/master/chatterbot/comparisons.py
-
-This module contains the text-comparison algorithm
-designed to compare one statement to another. It is a combination of the levenshtein fuzzy compare
-and the word vectors based WMD distance algorithm.
-
-"""
 
 import os
 import re
@@ -82,31 +69,6 @@ class Comparator:
     
       
 class LevenshteinDistance(Comparator):
-    """
-    Compare two statements based on the Levenshtein distance
-    of each statement's text.
-
-    For example, there is a 65% similarity between the statements
-    "where is the post office?" and "looking for the post office"
-    based on the Levenshtein distance algorithm.
-
-    Also, compare the same 2 statements using the WMD algorithm: https://github.com/mkusner/wmd
-
-     @inproceedings{kusner2015doc, 
-     title={From Word Embeddings To Document Distances}, 
-     author={Kusner, M. J. and Sun, Y. and Kolkin, N. I. and Weinberger, K. Q.}, 
-     booktitle={ICML}, 
-     year={2015}, 
-     }  
-
-     Finally, weight the levenshtein and WMD distances using custom weighting logic to bump up and down
-     similarity scores to widen the gap between matching sets of statements and the rest of the statements.
-
-     Note: The weights are derived separately using trial & error for our dataset. Please use cautiously and 
-           tune them for your needs.
-
-     """
-
 
     def compare(self, statement, other_statement):
         """
