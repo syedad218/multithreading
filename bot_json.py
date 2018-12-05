@@ -1,22 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
-"""
-Copyright: 2017 (c) Infosys Ltd
-License: See LICENSE file
-
-#### This program runs the chatbot on the default port 2234 or on the specified port.
-
-Run as:
-python final.py [read_only] [-p port]
-
-Call the API endpoints:
-chat/<msg> for sending questions and expect a response
-store/<ques~ans> for storing a question/answer pair in the knowledgebase
-
-"""
-
-
 
 # Import liraries
 import sys
@@ -260,9 +241,9 @@ if __name__ == '__main__':
 
 	except:
 		question=msg
-	   	username="Mo.Bot"
-		racf_id="uzvbot00"
-		email="MO.TechSupport@SunTrust.com"
+	   	username="a.Bot"
+		racf_id="idbot00"
+		email="wow@gmail.com"
 	t = strftime("%Y-%m-%d %H:%M:%S", gmtime())
 	#logging.critical('Time:%s' % t)
 	#current_user_ip=request.environ.get('REMOTE_ADDR')
@@ -368,9 +349,9 @@ if __name__ == '__main__':
 	except:
 		meta_question=meta_question
 		print meta_question
-	   	username="Mo.Bot"
-		racf_id="uzvbot00"
-		email="MO.TechSupport@SunTrust.com"
+	   	username="a.Bot"
+		racf_id="id.bot00"
+		email="a@gmail.com"
 	t = strftime("%Y-%m-%d %H:%M:%S", gmtime())
     	logging.critical('Time:%s' % t)
 	#logging user information 
